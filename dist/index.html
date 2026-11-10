@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfólio de João Victor Lopes. Conheça projetos web, aplicações full-stack, APIs REST e as tecnologias usadas em cada um.">
+  <meta name="theme-color" content="#0e1019">
+  <title>João Victor Lopes | Portfólio Full-Stack</title>
+  <link rel="icon" href="assets/icone.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="portfolio.js" defer></script>
+</head>
+<body id="inicio">
+<a class="skip" href="#conteudo">Ir para o conteúdo</a>
+<header class="header">
+  <div class="wrap header-inner">
+    <a class="brand" href="#inicio" aria-label="João Victor Lopes, início"><img src="assets/icone.svg" alt="" width="34" height="34"><span>joaolopes<span class="accent">.dev</span></span></a>
+    <nav aria-label="Navegação principal"><a href="#projetos">Projetos</a><a href="#tecnologias">Tecnologias</a><a href="#sobre">Sobre</a></nav>
+    <a class="header-github" href="https://github.com/joaolopes00-r">GitHub <span aria-hidden="true">↗</span></a>
+  </div>
+</header>
+<main id="conteudo">
+  <section class="wrap hero" aria-labelledby="titulo">
+    <div class="hero-copy">
+      <p class="eyebrow"><span class="pulse"></span> PORTFÓLIO DE DESENVOLVIMENTO</p>
+      <h1 id="titulo">João Victor<br><span>Lopes.</span></h1>
+      <p class="hero-role">Desenvolvedor full-stack</p>
+      <p class="intro">Construo interfaces web e as APIs que fazem tudo funcionar, do primeiro clique à persistência dos dados.</p>
+      <div class="hero-actions"><a class="button primary" href="#projetos">Explorar projetos <span aria-hidden="true">↓</span></a><a class="button secondary" href="https://github.com/joaolopes00-r">Meu GitHub <span aria-hidden="true">↗</span></a></div>
+      <p class="location">BELO HORIZONTE · MG</p>
+    </div>
+    <div class="hero-visual"><div class="visual-label"><span><i></i><i></i><i></i></span><span>FRONTEND / BACKEND / DADOS</span></div>
+      <img src="assets/circuito.svg" alt="Circuito ilustrado que conecta TypeScript, React, Node.js e SQL" width="560" height="456" fetchpriority="high">
+    </div>
+  </section>
+  <section id="projetos" class="section wrap" aria-labelledby="projetos-titulo">
+    <div class="section-head"><p class="eyebrow">01 / PORTFÓLIO</p><h2 id="projetos-titulo">Projetos selecionados</h2><p>Quatro aplicações que mostram como trabalho com interfaces, APIs e dados.</p></div>
+    <div class="filters" role="group" aria-label="Filtrar projetos" hidden>
+      <button type="button" data-filter="all" aria-pressed="true">Todos</button><button type="button" data-filter="web" aria-pressed="false">Interfaces</button><button type="button" data-filter="full" aria-pressed="false">Full-stack</button><button type="button" data-filter="api" aria-pressed="false">APIs</button>
+    </div>
+    <p class="sr-only" role="status" id="resultados"></p>
+    <div class="project-grid"><article class="card casa" data-category="web">
+  <img class="card-art" src="assets/casa.svg" alt="Janela de navegador conectada a HTML, CSS e JavaScript" width="560" height="230" loading="lazy">
+  <div class="card-body">
+    <div class="card-meta"><span>01</span><span>Landing page</span></div>
+    <h3>Casa de Carnes</h3><p>Landing page para uma casa de carnes, construída com as tecnologias fundamentais da web.</p>
+    <ul class="tags" aria-label="Tecnologias"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+    <div class="card-links"><a href="https://casadecarnes-omega.vercel.app" aria-label="Visitar projeto de Casa de Carnes">Visitar projeto <span aria-hidden="true">↗</span></a></div>
+  </div>
+</article>
+<article class="card biblioteca" data-category="full">
+  <img class="card-art" src="assets/biblioteca.svg" alt="Livro conectado a React, Vite e PostgreSQL" width="560" height="230" loading="lazy">
+  <div class="card-body">
+    <div class="card-meta"><span>02</span><span>Aplicação full-stack</span></div>
+    <h3>Biblioteca Online</h3><p>Catálogo de livros com cadastro, consulta, edição e remoção. A interface React se comunica com uma API Express que persiste os dados no PostgreSQL.</p>
+    <ul class="tags" aria-label="Tecnologias"><li>React</li><li>Vite</li><li>JavaScript</li><li>SCSS</li><li>HTML</li><li>Node.js</li><li>Express</li><li>PostgreSQL</li></ul>
+    <div class="card-links"><a href="https://github.com/joaolopes00-r/rid-151162_Desafio05" aria-label="Ver código de Biblioteca Online">Ver código <span aria-hidden="true">↗</span></a></div>
+  </div>
+</article>
+<article class="card commerce" data-category="api">
+  <img class="card-art" src="assets/commerce.svg" alt="Caixa de estoque conectada a MongoDB e MySQL" width="560" height="230" loading="lazy">
+  <div class="card-body">
+    <div class="card-meta"><span>03</span><span>API REST</span></div>
+    <h3>DNCommerce API</h3><p>API para estoque e vendas. Produtos e estoque ficam no MongoDB. Clientes, pedidos e vendas são modelados no MySQL.</p>
+    <ul class="tags" aria-label="Tecnologias"><li>JavaScript</li><li>Node.js</li><li>Express</li><li>MongoDB</li><li>MySQL</li><li>Mongoose</li><li>Sequelize</li><li>Insomnia</li></ul>
+    
+  </div>
+</article>
+<article class="card users" data-category="api">
+  <img class="card-art" src="assets/users.svg" alt="Cadeado conectado a NestJS e JWT" width="560" height="230" loading="lazy">
+  <div class="card-body">
+    <div class="card-meta"><span>04</span><span>API REST</span></div>
+    <h3>Nest Users API</h3><p>API de gerenciamento de usuários com autenticação JWT, hash de senhas com bcrypt e rotas protegidas por guards do NestJS.</p>
+    <ul class="tags" aria-label="Tecnologias"><li>TypeScript</li><li>Node.js</li><li>NestJS</li><li>TypeORM</li><li>MySQL</li><li>Passport.js</li><li>JWT</li><li>bcrypt</li></ul>
+    <div class="card-links"><a href="https://github.com/joaolopes00-r/rid-151162_Desafio07" aria-label="Ver código de Nest Users API">Ver código <span aria-hidden="true">↗</span></a></div>
+  </div>
+</article></div>
+  </section>
+  <section id="tecnologias" class="section wrap" aria-labelledby="stack-titulo">
+    <div class="section-head"><p class="eyebrow">02 / FERRAMENTAS</p><h2 id="stack-titulo">Tecnologias que usei</h2><p>As ferramentas por trás dos projetos, organizadas por camada.</p></div>
+    <div class="stack-grid"><article class="stack-card"><span class="stack-num" aria-hidden="true">01 //</span><h3>Linguagens e interface</h3><p>Da estrutura da página à interação no navegador.</p><ul class="tags"><li>JavaScript</li><li>TypeScript</li><li>HTML</li><li>CSS</li><li>SCSS</li><li>React</li><li>Vite</li></ul></article><article class="stack-card"><span class="stack-num" aria-hidden="true">02 //</span><h3>Backend e autenticação</h3><p>APIs REST, rotas protegidas e gerenciamento de usuários.</p><ul class="tags"><li>Node.js</li><li>Express</li><li>NestJS</li><li>Passport.js</li><li>JWT</li><li>bcrypt</li><li>Nodemon</li><li>Insomnia</li></ul></article><article class="stack-card"><span class="stack-num" aria-hidden="true">03 //</span><h3>Persistência de dados</h3><p>Modelagem relacional e por documentos, conforme o domínio.</p><ul class="tags"><li>PostgreSQL</li><li>MySQL</li><li>MongoDB</li><li>TypeORM</li><li>Sequelize</li><li>Mongoose</li><li>pgcrypto</li></ul></article></div>
+  </section>
+  <section id="sobre" class="section wrap" aria-labelledby="sobre-titulo">
+    <div class="about"><div><p class="eyebrow">03 / SOBRE MIM</p><h2 id="sobre-titulo">João Victor Lopes</h2><p>Sou desenvolvedor full-stack de Belo Horizonte. Nos meus projetos, trabalho desde a interface até a autenticação e a modelagem de dados.</p></div><a class="button primary" href="https://github.com/joaolopes00-r">Conheça meu GitHub <span aria-hidden="true">↗</span></a></div>
+  </section>
+</main>
+<footer class="wrap footer"><span>João Victor Lopes</span><a href="#inicio">Voltar ao topo <span aria-hidden="true">↑</span></a></footer>
+</body>
+</html>
